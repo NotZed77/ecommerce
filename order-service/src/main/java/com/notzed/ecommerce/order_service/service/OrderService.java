@@ -1,10 +1,10 @@
 package com.notzed.ecommerce.order_service.service;
 
-import com.ecommerce.shipping_service.dto.ShippingDto;
 import com.notzed.ecommerce.order_service.client.InventoryOpenFeignClient;
-import com.notzed.ecommerce.order_service.client.ShippingOpenFeignClient;
+//import com.notzed.ecommerce.order_service.client.ShippingOpenFeignClient;
 import com.notzed.ecommerce.order_service.dto.OrderDto;
 import com.notzed.ecommerce.order_service.dto.OrderRequestDto;
+import com.notzed.ecommerce.order_service.dto.ShippingDto;
 import com.notzed.ecommerce.order_service.entity.Order;
 import com.notzed.ecommerce.order_service.entity.OrderItem;
 import com.notzed.ecommerce.order_service.entity.OrderStatus;
@@ -29,7 +29,7 @@ public class OrderService {
     private final OrderRepository orderRepository;
     private final ModelMapper modelMapper;
     private final InventoryOpenFeignClient inventoryOpenFeignClient;
-    private final ShippingOpenFeignClient shippingOpenFeignClient;
+//    private final ShippingOpenFeignClient shippingOpenFeignClient;
 
     public List<OrderRequestDto> getAllOrders() {
         log.info("Fetching all orders");
@@ -57,7 +57,7 @@ public class OrderService {
         order.setTotalPrice(totalPrice);
         order.setOrderStatus(OrderStatus.CONFIRMED);
 
-        ShippingDto shipping = confirmShipping(order.getShippingId());
+//        ShippingDto shipping = confirmShipping(order.getShippingId());
 
         Order savedOrder = orderRepository.save(order);
 
@@ -70,11 +70,11 @@ public class OrderService {
         return inventoryOpenFeignClient.reduceStocks(orderRequestDto);
     }
 
-    @Retry(name = "shippingService", fallbackMethod = "shippingFallback")
-    @CircuitBreaker(name = "shippingCircuitBreaker", fallbackMethod = "shippingFallback")
-    public ShippingDto confirmShipping(Long shippingId){
-        return shippingOpenFeignClient.confirmedShipping(String.valueOf(shippingId));
-    }
+//    @Retry(name = "shippingService", fallbackMethod = "shippingFallback")
+//    @CircuitBreaker(name = "shippingCircuitBreaker", fallbackMethod = "shippingFallback")
+//    public ShippingDto confirmShipping(Long shippingId){
+//        return shippingOpenFeignClient.confirmedShipping(String.valueOf(shippingId));
+//    }
 
     public ShippingDto shippingFallback(Long shippingId, Throwable throwable){
         log.error("Shipping Service unavailable for Shipping ID {}: {}", shippingId, throwable.getMessage());

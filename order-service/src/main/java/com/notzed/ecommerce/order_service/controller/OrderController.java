@@ -1,12 +1,15 @@
 package com.notzed.ecommerce.order_service.controller;
 
 import com.notzed.ecommerce.order_service.client.InventoryOpenFeignClient;
+import com.notzed.ecommerce.order_service.config.FeaturesEnableConfig;
 import com.notzed.ecommerce.order_service.dto.OrderDto;
 import com.notzed.ecommerce.order_service.dto.OrderRequestDto;
 import com.notzed.ecommerce.order_service.entity.Order;
 import com.notzed.ecommerce.order_service.service.OrderService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,13 +19,24 @@ import java.util.List;
 @RequestMapping("/core")
 @RequiredArgsConstructor
 @Slf4j
+@RefreshScope
 public class OrderController {
 
     private final OrderService orderService;
+    private final FeaturesEnableConfig featuresEnableConfig;
+
+    @Value("${my.variable}")
+    private String myVariable;
 
     @GetMapping("/helloOrders")
-    public String helloOrders(){
-        return "Hello from Orders Service";
+    public String helloOrders() {
+        if(featuresEnableConfig.isUserTrackingEnabled()){
+            return "User tracking is Enabled, my variable is: "+myVariable;
+
+        }
+        else{
+            return "User tracking is Disabled, my variable is: "+myVariable;
+        }
     }
 
     @PostMapping("/create-order")

@@ -1,0 +1,63 @@
+15-08-2026 17:19:01.901 [main] [-] INFO  inventory-service-c.n.e.i.InventoryServiceApplicationTests - Starting InventoryServiceApplicationTests using Java 25.0.1 with PID 23184 (started by asyed in D:\Coding Projects\ecommerce\inventory-service)
+15-08-2026 17:19:01.903 [main] [-] INFO  inventory-service-c.n.e.i.InventoryServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+15-08-2026 17:19:01.944 [main] [-] INFO  inventory-service-o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+15-08-2026 17:19:01.945 [main] [-] INFO  inventory-service-o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=inventory-service, profiles=[default], label=null, version=4c06bd2a92342d5bfb28139c4e6e46ef7ad557f4, state=
+15-08-2026 17:19:03.324 [main] [-] INFO  inventory-service-o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15-08-2026 17:19:03.754 [main] [-] INFO  inventory-service-o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 400 ms. Found 1 JPA repository interface.
+15-08-2026 17:19:04.978 [main] [-] INFO  inventory-service-o.s.cloud.context.scope.GenericScope - BeanFactory id=c24f823d-a6a1-3f3a-87fd-f167e3daea18
+15-08-2026 17:19:08.557 [main] [-] INFO  inventory-service-org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+15-08-2026 17:19:09.806 [main] [-] INFO  inventory-service-org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+15-08-2026 17:19:11.125 [main] [-] INFO  inventory-service-o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+15-08-2026 17:19:11.201 [main] [-] INFO  inventory-service-com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15-08-2026 17:19:11.543 [main] [-] INFO  inventory-service-com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1cb73a92
+15-08-2026 17:19:11.545 [main] [-] INFO  inventory-service-com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15-08-2026 17:19:11.646 [main] [-] INFO  inventory-service-o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/inventoryDB]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.7
+	Default catalog/schema: inventoryDB/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+15-08-2026 17:19:12.736 [main] [-] INFO  inventory-service-org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+15-08-2026 17:19:12.881 [main] [-] INFO  inventory-service-o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15-08-2026 17:19:12.976 [main] [-] INFO  inventory-service-o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+15-08-2026 17:19:13.722 [main] [-] WARN  inventory-service-o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15-08-2026 17:19:13.795 [main] [-] INFO  inventory-service-o.s.c.o.FeignClientFactoryBean - For 'order-service' URL not provided. Will try picking an instance via load-balancing.
+15-08-2026 17:19:14.628 [main] [-] INFO  inventory-service-o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
+15-08-2026 17:19:14.654 [main] [-] WARN  inventory-service-o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+15-08-2026 17:19:14.671 [main] [-] INFO  inventory-service-o.s.b.a.e.web.EndpointLinksResolver - Exposing 16 endpoints beneath base path '/actuator'
+15-08-2026 17:19:14.745 [main] [-] INFO  inventory-service-o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+15-08-2026 17:19:14.774 [main] [-] INFO  inventory-service-c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+15-08-2026 17:19:14.779 [main] [-] INFO  inventory-service-c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+15-08-2026 17:19:14.789 [main] [-] INFO  inventory-service-c.netflix.discovery.DiscoveryClient - Disable delta property : false
+15-08-2026 17:19:14.789 [main] [-] INFO  inventory-service-c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+15-08-2026 17:19:14.789 [main] [-] INFO  inventory-service-c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+15-08-2026 17:19:14.790 [main] [-] INFO  inventory-service-c.netflix.discovery.DiscoveryClient - Application is null : false
+15-08-2026 17:19:14.790 [main] [-] INFO  inventory-service-c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+15-08-2026 17:19:14.790 [main] [-] INFO  inventory-service-c.netflix.discovery.DiscoveryClient - Application version is -1: true
+15-08-2026 17:19:14.790 [main] [-] INFO  inventory-service-c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+15-08-2026 17:19:14.977 [main] [-] INFO  inventory-service-c.netflix.discovery.DiscoveryClient - The response status is 200
+15-08-2026 17:19:14.980 [main] [-] INFO  inventory-service-c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+15-08-2026 17:19:14.981 [main] [-] INFO  inventory-service-c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+15-08-2026 17:19:14.983 [main] [-] INFO  inventory-service-c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1786794554983 with initial instances count: 2
+15-08-2026 17:19:14.986 [main] [-] INFO  inventory-service-o.s.c.n.e.s.EurekaServiceRegistry - Registering application INVENTORY-SERVICE with eureka with status UP
+15-08-2026 17:19:14.987 [main] [-] INFO  inventory-service-c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1786794554987, current=UP, previous=STARTING]
+15-08-2026 17:19:14.988 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  inventory-service-c.netflix.discovery.DiscoveryClient - DiscoveryClient_INVENTORY-SERVICE/192.168.1.45:inventory-service:9010: registering service...
+15-08-2026 17:19:14.996 [main] [-] INFO  inventory-service-c.n.e.i.InventoryServiceApplicationTests - Started InventoryServiceApplicationTests in 17.439 seconds (process running for 28.772)
+15-08-2026 17:19:15.026 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  inventory-service-c.netflix.discovery.DiscoveryClient - DiscoveryClient_INVENTORY-SERVICE/192.168.1.45:inventory-service:9010 - registration status: 204
+15-08-2026 17:19:15.685 [SpringApplicationShutdownHook] [-] INFO  inventory-service-o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application INVENTORY-SERVICE with eureka with status DOWN
+15-08-2026 17:19:15.686 [SpringApplicationShutdownHook] [-] INFO  inventory-service-c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1786794555686, current=DOWN, previous=UP]
+15-08-2026 17:19:15.686 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  inventory-service-c.netflix.discovery.DiscoveryClient - DiscoveryClient_INVENTORY-SERVICE/192.168.1.45:inventory-service:9010: registering service...
+15-08-2026 17:19:15.690 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  inventory-service-c.netflix.discovery.DiscoveryClient - DiscoveryClient_INVENTORY-SERVICE/192.168.1.45:inventory-service:9010 - registration status: 204
+15-08-2026 17:19:15.696 [SpringApplicationShutdownHook] [-] INFO  inventory-service-o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+15-08-2026 17:19:15.706 [SpringApplicationShutdownHook] [-] INFO  inventory-service-com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+15-08-2026 17:19:15.709 [SpringApplicationShutdownHook] [-] INFO  inventory-service-com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+15-08-2026 17:19:15.711 [SpringApplicationShutdownHook] [-] INFO  inventory-service-c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+15-08-2026 17:19:18.720 [SpringApplicationShutdownHook] [-] INFO  inventory-service-c.netflix.discovery.DiscoveryClient - Unregistering ...
+15-08-2026 17:19:18.763 [SpringApplicationShutdownHook] [-] INFO  inventory-service-c.netflix.discovery.DiscoveryClient - DiscoveryClient_INVENTORY-SERVICE/192.168.1.45:inventory-service:9010 - deregister  status: 200
+15-08-2026 17:19:18.764 [SpringApplicationShutdownHook] [-] INFO  inventory-service-c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
