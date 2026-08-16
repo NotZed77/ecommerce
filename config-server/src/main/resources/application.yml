@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/NotZed77/ecommerce-config-server
+          uri: https://github.com/
           username:
           password: 
           default-label: main
