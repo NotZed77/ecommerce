@@ -6,8 +6,8 @@ spring:
       server:
         git:
           uri: https://github.com/NotZed77/ecommerce-config-server
-          username: NotZed77
-          password: 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
+          username:
+          password: 
           default-label: main
 
 server:
