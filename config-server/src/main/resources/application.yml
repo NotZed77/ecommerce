@@ -7,13 +7,12 @@ spring:
         git:
           uri: https://github.com/NotZed77/ecommerce-config-server
           username: NotZed77
-          password: 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
+          password: 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
           default-label: main
-
-server:
-  port: 8888
-
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://discovery-service:8761/eureka/
+
+server:
+  port: 8888

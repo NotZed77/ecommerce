@@ -28,7 +28,7 @@ public class AuthorizationGatewayFilterFactory extends AbstractGatewayFilterFact
 
             String authorizationHeader = exchange.getRequest()
                     .getHeaders().getFirst("Authorization");
-            if(authorizationHeader == null || authorizationHeader.startsWith("Bearer ")){
+            if(authorizationHeader == null || authorizationHeader.startsWith("Bearer")){
                 exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
                 return exchange.getResponse().setComplete();
             }
@@ -36,7 +36,7 @@ public class AuthorizationGatewayFilterFactory extends AbstractGatewayFilterFact
             String token = authorizationHeader.substring(7);
             String userRoleFromToken = String.valueOf(jwtService.getUserRoleFromToken(token));
             return chain.filter(exchange);
-        };
+         };
     }
 
     @Data

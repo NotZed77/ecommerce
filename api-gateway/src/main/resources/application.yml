@@ -1,38 +1,5 @@
 spring:
   application:
     name: api-gateway
-
-  cloud:
-    gateway:
-      server:
-        webmvc:
-          routes:
-            - id: order-service
-              uri: lb://ORDER-SERVICE
-              predicates:
-                - Path=/api/v1/order/**
-              filters:
-                - StripPrefix=2
-
-            - id: inventory-service
-              uri: lb://INVENTORY-SERVICE
-              predicates:
-                - Path=/api/v1/inventory/**
-              filters:
-                - StripPrefix=2
-                - AddRequestHeader=X-Customer-Header, zed
-
-            - id: shipping-service
-              uri: lb://SHIPPING-SERVICE
-              predicates:
-                - Path=/api/v1/shipping/**
-              filters:
-                - StripPrefix=2
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka
-
-
-server:
-  port: 8083
+  config:
+    import: configserver:http://config-server:8888
