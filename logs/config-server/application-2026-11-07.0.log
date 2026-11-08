@@ -1,0 +1,57 @@
+07-11-2026 03:36:02.533 [background-preinit] [-] INFO  config-server-o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+07-11-2026 03:36:02.570 [main] [-] INFO  config-server-c.n.e.a.ApiGatewayApplication - Starting ApiGatewayApplication using Java 25.0.1 with PID 2080 (D:\Coding Projects\ecommerce\api-gateway\target\classes started by asyed in D:\Coding Projects\ecommerce)
+07-11-2026 03:36:02.570 [main] [-] INFO  config-server-c.n.e.a.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+07-11-2026 03:36:02.602 [main] [-] INFO  config-server-o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+07-11-2026 03:36:02.603 [main] [-] INFO  config-server-o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=api-gateway, profiles=[default], label=null, version=a69b03d2760e934d436967b38233a99210ed28c5, state=
+07-11-2026 03:36:02.605 [main] [-] INFO  config-server-o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+07-11-2026 03:36:02.605 [main] [-] INFO  config-server-o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=config-server, profiles=[default], label=null, version=a69b03d2760e934d436967b38233a99210ed28c5, state=
+07-11-2026 03:36:03.511 [main] [-] INFO  config-server-o.s.cloud.context.scope.GenericScope - BeanFactory id=8f274bbd-e051-311e-aee3-7aa1c6d3b4f8
+07-11-2026 03:36:04.262 [main] [-] INFO  config-server-o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+07-11-2026 03:36:04.262 [main] [-] INFO  config-server-o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+07-11-2026 03:36:04.262 [main] [-] INFO  config-server-o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+07-11-2026 03:36:04.262 [main] [-] INFO  config-server-o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+07-11-2026 03:36:04.262 [main] [-] INFO  config-server-o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+07-11-2026 03:36:04.262 [main] [-] INFO  config-server-o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+07-11-2026 03:36:04.262 [main] [-] INFO  config-server-o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+07-11-2026 03:36:04.263 [main] [-] INFO  config-server-o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+07-11-2026 03:36:04.263 [main] [-] INFO  config-server-o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+07-11-2026 03:36:04.263 [main] [-] INFO  config-server-o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+07-11-2026 03:36:04.263 [main] [-] INFO  config-server-o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+07-11-2026 03:36:04.263 [main] [-] INFO  config-server-o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Version]
+07-11-2026 03:36:04.263 [main] [-] INFO  config-server-o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+07-11-2026 03:36:04.263 [main] [-] INFO  config-server-o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+07-11-2026 03:36:04.263 [main] [-] INFO  config-server-o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+07-11-2026 03:36:04.493 [main] [-] INFO  config-server-o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+07-11-2026 03:36:04.652 [main] [-] INFO  config-server-o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestClient.
+07-11-2026 03:36:04.669 [main] [-] WARN  config-server-o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+07-11-2026 03:36:04.726 [main] [-] INFO  config-server-o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+07-11-2026 03:36:04.747 [main] [-] INFO  config-server-c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+07-11-2026 03:36:04.750 [main] [-] INFO  config-server-c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+07-11-2026 03:36:04.759 [main] [-] INFO  config-server-c.netflix.discovery.DiscoveryClient - Disable delta property : false
+07-11-2026 03:36:04.759 [main] [-] INFO  config-server-c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+07-11-2026 03:36:04.759 [main] [-] INFO  config-server-c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+07-11-2026 03:36:04.759 [main] [-] INFO  config-server-c.netflix.discovery.DiscoveryClient - Application is null : false
+07-11-2026 03:36:04.759 [main] [-] INFO  config-server-c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+07-11-2026 03:36:04.759 [main] [-] INFO  config-server-c.netflix.discovery.DiscoveryClient - Application version is -1: true
+07-11-2026 03:36:04.759 [main] [-] INFO  config-server-c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+07-11-2026 03:36:05.053 [main] [-] INFO  config-server-c.netflix.discovery.DiscoveryClient - The response status is 200
+07-11-2026 03:36:05.055 [main] [-] INFO  config-server-c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+07-11-2026 03:36:05.056 [main] [-] INFO  config-server-c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+07-11-2026 03:36:05.057 [main] [-] INFO  config-server-c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1794002765057 with initial instances count: 1
+07-11-2026 03:36:05.060 [main] [-] INFO  config-server-o.s.c.n.e.s.EurekaServiceRegistry - Registering application CONFIG-SERVER with eureka with status UP
+07-11-2026 03:36:05.060 [main] [-] INFO  config-server-c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1794002765060, current=UP, previous=STARTING]
+07-11-2026 03:36:05.061 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  config-server-c.netflix.discovery.DiscoveryClient - DiscoveryClient_CONFIG-SERVER/zed.mshome.net:config-server:8080: registering service...
+07-11-2026 03:36:05.091 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  config-server-c.netflix.discovery.DiscoveryClient - DiscoveryClient_CONFIG-SERVER/zed.mshome.net:config-server:8080 - registration status: 204
+07-11-2026 03:36:05.229 [main] [-] INFO  config-server-o.s.b.reactor.netty.NettyWebServer - Netty started on port 8080 (http)
+07-11-2026 03:36:05.230 [main] [-] INFO  config-server-o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+07-11-2026 03:36:05.254 [main] [-] INFO  config-server-c.n.e.a.ApiGatewayApplication - Started ApiGatewayApplication in 5.348 seconds (process running for 6.174)
+07-11-2026 03:40:18.946 [SpringApplicationShutdownHook] [-] INFO  config-server-o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application CONFIG-SERVER with eureka with status DOWN
+07-11-2026 03:40:18.947 [SpringApplicationShutdownHook] [-] INFO  config-server-c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1794003018947, current=DOWN, previous=UP]
+07-11-2026 03:40:18.947 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  config-server-c.netflix.discovery.DiscoveryClient - DiscoveryClient_CONFIG-SERVER/zed.mshome.net:config-server:8080: registering service...
+07-11-2026 03:40:18.951 [SpringApplicationShutdownHook] [-] INFO  config-server-o.s.b.reactor.netty.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+07-11-2026 03:40:18.954 [DiscoveryClient-InstanceInfoReplicator-%d] [-] INFO  config-server-c.netflix.discovery.DiscoveryClient - DiscoveryClient_CONFIG-SERVER/zed.mshome.net:config-server:8080 - registration status: 204
+07-11-2026 03:40:18.957 [netty-shutdown] [-] INFO  config-server-o.s.b.reactor.netty.GracefulShutdown - Graceful shutdown complete
+07-11-2026 03:40:20.996 [SpringApplicationShutdownHook] [-] INFO  config-server-c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+07-11-2026 03:40:23.998 [SpringApplicationShutdownHook] [-] INFO  config-server-c.netflix.discovery.DiscoveryClient - Unregistering ...
+07-11-2026 03:40:24.012 [SpringApplicationShutdownHook] [-] INFO  config-server-c.netflix.discovery.DiscoveryClient - DiscoveryClient_CONFIG-SERVER/zed.mshome.net:config-server:8080 - deregister  status: 200
+07-11-2026 03:40:24.013 [SpringApplicationShutdownHook] [-] INFO  config-server-c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient

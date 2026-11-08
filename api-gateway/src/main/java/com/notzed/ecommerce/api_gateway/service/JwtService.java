@@ -1,4 +1,4 @@
-package com.notzed.api_gateway.service;
+package com.notzed.ecommerce.api_gateway.service;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

@@ -18,20 +18,32 @@ spec:
         image: postgres:16
         resources:
           requests:
-            memory: "200Mi"
-            cpu: "200m"
+            memory: "100Mi"
+            cpu: "100m"
           limits:
             memory: "100Mi"
             cpu: "100m"
         env:
         - name: POSTGRES_USER
-          value: "postgres"
+          valueFrom:
+            secretKeyRef:
+              name: my-secret
+              key: DB_USERNAME
         - name: POSTGRES_PASSWORD
-          value: "Dansat@12"
+          valueFrom:
+            secretKeyRef:
+              name: my-secret
+              key: DB_PASSWORD
         - name: POSTGRES_DB
-          value: "orderDB"
+          valueFrom:
+            secretKeyRef:
+              name: my-secret
+              key: ORDER_DB_NAME
         - name: PGDATA
-          value: "/var/lib/postgresql/data/pgdata"
+          valueFrom:
+            configMapKeyRef:
+              name: my-config
+              key: PG_DATA
         ports:
         - containerPort: 5432
           name: postgres

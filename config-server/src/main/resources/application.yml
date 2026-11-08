@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/NotZed77/ecommerce-config-server
+          username: NotZed77
+          password: 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
+          default-label: main
+
+server:
+  port: 8888

@@ -37,8 +37,15 @@ services:
     build: ./discovery-service
     image: notzed77/discovery-service
     container_name: discovery-service
+    ports:
+      - "8761:8761"
     networks:
       - ecommerce-network
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8761/actuator/health" ]
+      interval: 10s
+      timeout: 5s
+      retries: 10
 
   config-server:
     build: ./config-server
@@ -46,8 +53,12 @@ services:
     container_name: config-server
     networks:
       - ecommerce-network
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://discovery-service:8761/eureka/
     depends_on:
-      - discovery-service
+      discovery-service:
+        condition: service_healthy
+
 
   inventory-service:
     build: ./inventory-service

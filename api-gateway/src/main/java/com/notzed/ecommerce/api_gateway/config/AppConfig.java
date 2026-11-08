@@ -1,4 +1,4 @@
-package com.notzed.api_gateway.config;
+package com.notzed.ecommerce.api_gateway.config;
 
 import feign.Capability;
 import feign.micrometer.MicrometerCapability;

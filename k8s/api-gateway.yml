@@ -26,6 +26,13 @@ spec:
             value: k8s
         ports:
         - containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /actuator/health
+            port: 8080
+          initialDelaySeconds: 300
+          periodSeconds: 20
+          timeoutSeconds: 20
 
 ---
 
@@ -34,7 +41,7 @@ kind: Service
 metadata:
   name: api-gateway
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: api-gateway
   ports:

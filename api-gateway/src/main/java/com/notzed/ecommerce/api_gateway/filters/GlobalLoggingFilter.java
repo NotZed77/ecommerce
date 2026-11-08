@@ -1,4 +1,4 @@
-package com.notzed.api_gateway.filters;
+package com.notzed.ecommerce.api_gateway.filters;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
