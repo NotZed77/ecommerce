@@ -39,6 +39,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Grant execute permission to Maven Wrapper
+        working-directory: ${{ matrix.service }}
         run: chmod +x mvnw
 
       - name: Build and Push ${{ matrix.service }}
