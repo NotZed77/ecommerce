@@ -43,7 +43,8 @@ jobs:
       - name: Build and Push ${{ matrix.service }}
         working-directory: ${{ matrix.service }}
         run: |
-          mvn -B clean package jib:build -DskipTests
+          chmod +x mvnw
+          bash ./mvnw clean package jib:build -DskipTests
           
 
   Deploy:
